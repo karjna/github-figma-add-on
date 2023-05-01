@@ -6,6 +6,8 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "./local-preset.js",
+    '@storybook/preset-scss',
+    'storybook-addon-designs'
   ],
   framework: {
     name: "@storybook/react-vite",

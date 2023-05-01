@@ -1,0 +1,151 @@
+@import '~@thumbtack/thumbprint-tokens/dist/scss/_index';
+
+.toast {
+    position: absolute;
+    transform: translateX(-50%);
+    min-width: 375px;
+    max-width: $tp-wrap__max-width;
+    padding: $tp-space__3 $tp-space__1 $tp-space__3 $tp-space__3;
+    display: flex;
+    align-items: center;
+    box-shadow: $tp-shadow__400;
+    font-weight: 500;
+    font-size: $tp-font__body__1__size;
+    line-height: $tp-font__body__1__line-height;
+    opacity: 0;
+    transition: all $tp-duration__4 $tp-ease__in-out;
+    margin: $tp-space__2 0;
+    top: -$tp-space__3;
+    justify-content: flex-start;
+    border-radius: $tp-border-radius__base;
+}
+    .toast.mobile {
+        top: unset;
+        bottom: -$tp-space__3;
+        min-width: 343px;
+    }
+
+    .toast.open {
+        opacity: 1;
+        top: $tp-space__3;
+
+        &.mobile {
+            top: unset;
+            bottom: $tp-space__3;
+        }
+    }
+
+    .toast .content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .toast .text {
+        margin-right: $tp-space__3;
+        flex-grow: 1;
+    }
+
+    .toast .icon {
+        margin-right: $tp-space__2;
+        display: flex;
+    }
+
+    .link,
+    .text button {
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: $tp-font-weight__bold;
+        color: $tp-color__white;
+    }
+
+    .toast .close {
+        cursor: pointer;
+        display: flex;
+
+        button {
+            padding: $tp-space__2;
+            margin: -$tp-space__2 0;
+        }
+    }
+
+    .toast.default {
+        background-color: $tp-color__black;
+        color: $tp-color__white;
+    }
+
+    .toast.success {
+        color: $tp-color__white;
+        background-color: $tp-color__green-500;
+
+        .link,
+        .text button {
+            color: $tp-color__white;
+        }
+    }
+
+    .toast.info {
+        color: $tp-color__white;
+        background-color: $tp-color__blue-500;
+
+        .link,
+        .text button {
+            color: $tp-color__white;
+        }
+    }
+
+    .toast.caution {
+        color: $tp-color__black;
+        background-color: $tp-color__yellow-300;
+
+        .link,
+        .text button {
+            color: $tp-color__black;
+        }
+
+        .close {
+            color: $tp-color__black;
+        }
+    }
+
+    .toast.alert {
+        color: $tp-color__white;
+        background-color: $tp-color__red-500;
+
+        .link,
+        .text button {
+            color: $tp-color__white;
+        }
+    }
+
+    .toast.default .link:hover,
+    .toast.default .text button:hover,
+    .toast.default .close:hover {
+        color: $tp-color__blue;
+    }
+
+    .toast.caution .link:hover,
+    .toast.caution .text button:hover,
+    .toast.caution .close:hover {
+        color: $tp-color__blue;
+    }
+
+    .toast.alert .link:hover,
+    .toast.alert .text button:hover,
+    .toast.alert .close:hover {
+        color: $tp-color__red-300;
+    }
+
+    .toast.info .link:hover,
+    .toast.info .text button:hover,
+    .toast.info .close:hover {
+        color: $tp-color__blue-300;
+    }
+
+    .toast.success .link:hover,
+    .toast.success .text button:hover,
+    .toast.success .close:hover {
+        color: $tp-color__green-300;
+    }
+

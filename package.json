@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "Display tabs with github and figma links",
   "keywords": [
-    "github", "figma", "tack", "storybook-addons"
+    "github",
+    "figma",
+    "tack",
+    "storybook-addons"
   ],
   "repository": {
     "type": "git",
@@ -55,23 +58,31 @@
     "@storybook/addon-essentials": "^7.0.0",
     "@storybook/addon-interactions": "^7.0.0",
     "@storybook/addon-links": "^7.0.0",
+    "@storybook/addon-styling": "^1.0.5",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^7.0.0",
     "@storybook/react-vite": "^7.0.0",
     "@storybook/testing-library": "^0.0.14-next.1",
+    "@types/lodash-es": "^4.17.7",
     "@types/node": "^18.15.0",
     "@types/react": "^18.0.34",
     "@vitejs/plugin-react": "^3.1.0",
     "auto": "^10.3.0",
     "boxen": "^5.0.1",
+    "css-loader": "^6.7.3",
     "dedent": "^0.7.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.1",
     "prompts": "^2.4.2",
     "prop-types": "^15.8.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "rimraf": "^3.0.2",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
     "storybook": "^7.0.0",
+    "storybook-addon-designs": "^6.3.1",
+    "style-loader": "^3.3.2",
     "tsup": "^6.6.3",
     "typescript": "^4.9.5",
     "vite": "^4.1.4",
@@ -105,5 +116,16 @@
       "react"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
+  },
+  "dependencies": {
+    "@thumbtack/thumbprint-atomic": "^4.4.0",
+    "@thumbtack/thumbprint-font-face": "^1.1.0",
+    "@thumbtack/thumbprint-global-css": "~0.1.2",
+    "@thumbtack/thumbprint-react": "^14.13.1",
+    "@thumbtack/thumbprint-scss": "~3.1.0",
+    "@thumbtack/thumbprint-tokens": "12.1.1",
+    "classnames": "^2.3.2",
+    "lodash-es": "^4.17.21",
+    "lottie-web": "^5.11.0"
   }
 }
